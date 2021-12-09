@@ -82,6 +82,26 @@ html {
     position: relative;
 }
 
+.block__text {
+    position: relative;
+    max-width: 60px;
+    width: 100%;
+ 
+}
+
+.promo__text {
+    position: absolute;
+    top: 0;
+    left: -120px;
+    width: 261px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px; 
+    text-align: center;  
+    color: #FFFFFF; 
+    transform: rotate(-90deg);
+}
+
 .promo__main {
     position: relative;
     display: flex;
@@ -95,14 +115,13 @@ html {
     font-size: 12px;
     line-height: 14px;  
     text-transform: uppercase; 
-    margin-bottom: 25px;
+    letter-spacing: 0.5em;
+    margin-bottom: 20px;
 }
 
 .promo__title {
-    font-family: Banny;
     font-size: 96px;
     text-transform: uppercase;
-    margin-bottom: 25px;
 }
 
 .social__buttons {
@@ -144,7 +163,7 @@ html {
 }
 
 .button__promo {
-    padding-left: 50px;
+    padding-left: 60px;
     padding-right: 60px;
 }
 
@@ -153,7 +172,7 @@ html {
 }
 
 .button--secondary {
-    margin-left: 38px;
+    margin-left: 34px;
     padding-top: 20px;
     padding-bottom: 20px;
     background: transparent;
@@ -173,9 +192,47 @@ html {
 }
 
 .link--down::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: -1px;
+    margin-left: -1px;
+    top: -25%;
+    left: -25%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
     
 }
 
+.title {
+    position: relative;
+    font-family: Banny;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -20px;
+    width: 60px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
+}
+
+.buttons {
+    margin-top: 58px;
+}
+
+.section__text {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
